@@ -25,4 +25,5 @@ jobs:
       shell: bash
       run: |
         cd ZeroQLGitHubActions
+        dotnet tool restore
         dotnet build --configuration $BuildConfiguration
