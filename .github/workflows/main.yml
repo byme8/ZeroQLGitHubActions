@@ -23,4 +23,6 @@ jobs:
 
     - name: Build
       shell: bash
-      run: dotnet build --configuration $BuildConfiguration
+      run: |
+        cd ZeroQLGithubActions
+        dotnet build --configuration $BuildConfiguration
